@@ -55,24 +55,36 @@
                                                 <color key="backgroundColor" red="0.86396652029999998" green="1" blue="0.5432652322" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="+"/>
+                                                <connections>
+                                                    <action selector="addNumbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Pee-5H-oYp"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="boB-gd-H4s">
                                                 <rect key="frame" x="84" y="118" width="167.5" height="98"/>
                                                 <color key="backgroundColor" red="0.86396652029999998" green="1" blue="0.5432652322" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="-"/>
+                                                <connections>
+                                                    <action selector="subtractNumbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Ae-5q-Pi0"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ata-RI-amT">
                                                 <rect key="frame" x="84" y="236" width="167.5" height="97.5"/>
                                                 <color key="backgroundColor" red="0.86396652029999998" green="1" blue="0.5432652322" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="x"/>
+                                                <connections>
+                                                    <action selector="multiplyNumbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ue6-mg-UgY"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kae-N5-USW">
                                                 <rect key="frame" x="84" y="353.5" width="167.5" height="98"/>
                                                 <color key="backgroundColor" red="0.86396652029999998" green="1" blue="0.5432652322" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                                 <state key="normal" title="÷"/>
+                                                <connections>
+                                                    <action selector="divideNumbers:" destination="BYZ-38-t0r" eventType="touchUpInside" id="adn-Jl-Hdm"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -97,6 +109,15 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="divBtn" destination="Kae-N5-USW" id="HDP-5t-SEI"/>
+                        <outlet property="minusBtn" destination="boB-gd-H4s" id="41n-GW-T47"/>
+                        <outlet property="mulBtn" destination="Ata-RI-amT" id="TYl-Pu-N7B"/>
+                        <outlet property="num1" destination="yTi-EW-DLu" id="bBp-rw-SMc"/>
+                        <outlet property="num2" destination="q0E-Of-kpr" id="cZL-KA-Y3s"/>
+                        <outlet property="plusBtn" destination="MyF-vg-lEY" id="rfS-pz-x2f"/>
+                        <outlet property="resultLabel" destination="hdJ-Kh-ACc" id="cOz-32-uUW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
